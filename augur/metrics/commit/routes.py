@@ -100,3 +100,29 @@ def create_commit_routes(server):
     """
     server.addRepoMetric(metrics.annual_commit_count_ranked_by_repo_in_repo_group,'annual-commit-count-ranked-by-repo-in-repo-group')
 
+    """
+    @api {get} /repo-groups/:repo_group_id/repo/:repo_id/timeline Timeline for Repo
+    @apiName repo-timeline
+    @apiGroup Experimental
+    @apiDescription This is an Augur-specific metric. We are currently working to define these more formally. Source: Git Repository
+    @apiParam {String} repo_url_base Base64 version of the URL of the GitHub repository as it appears in the Facade DB
+    @apiSuccessExample {json} Success-Response:
+                        [
+                            define: "JSON"
+                        ]
+    """
+    server.addRepoMetric(metrics.repo_timeline,'repo-timeline')
+
+    """
+    @api {get} /repo-groups/:repo_group_id/timeline Timeline for Repo Group
+    @apiName repo-group-timeline
+    @apiGroup Experimental
+    @apiDescription This is an Augur-specific metric. We are currently working to define these more formally. Source: Git Repository
+    @apiParam {String} repo_url_base Base64 version of the URL of the GitHub repository as it appears in the Facade DB
+    @apiSuccessExample {json} Success-Response:
+                        [
+                            define: "JSON"
+                        ]
+    """
+    server.addRepoGroupMetric(metrics.repo_group_timeline,'repo-group-timeline')
+

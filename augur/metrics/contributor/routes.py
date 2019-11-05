@@ -340,3 +340,18 @@ def create_contributor_routes(server):
     server.addRepoGroupMetric(metrics.contributors_code_development, 'contributors-code-development')
 
     server.addRepoMetric(metrics.contributors_code_development, 'contributors-code-development')
+
+    """
+    @api {get} /contributions/:contributor-name Contributions
+    @apiName contributions
+    @apiGroup Experimental
+    @apiDescription Returns a list of contributions from a specified user.
+    @apiParam {string} [contributor-name] Specify the contributor to retrieve contributions for
+    @apiSuccessExample {json} Success-Response:
+                    [
+                        {
+                            sample: "JSON"
+                        }
+                    ]
+    """
+    server.addRepoMetric(metrics.contributions, 'contributions')
