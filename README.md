@@ -1,3 +1,11 @@
+# Software Engineering Group 5
+
+Jacob Alongi, Matt Hudson, Tim Kuehner, Rebecca Parker
+
+**Sprint 1** [here](./sprint-1)
+
+**Sprint 2** [here](./sprint-2)
+
 # Augur
 
 branch | status
