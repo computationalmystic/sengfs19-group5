@@ -1,0 +1,18 @@
+nohup: ignoring input
+2019-11-11 19:15:32 js-16-101.jetstream-cloud.org augur[27734] INFO Booting broker and its manager...
+2019-11-11 19:15:33 js-16-101.jetstream-cloud.org augur[27734] INFO Booting housekeeper...
+2019-11-11 19:15:33 js-16-101.jetstream-cloud.org root[27734] INFO Starting update processes...
+2019-11-11 19:15:33 js-16-101.jetstream-cloud.org augur[27734] INFO Starting server...
+[2019-11-11 19:15:33 -0600] [27734] [INFO] Starting gunicorn 19.9.0
+[2019-11-11 19:15:33 -0600] [27734] [INFO] Listening at: http://172.21.45.11:5000 (27734)
+[2019-11-11 19:15:33 -0600] [27734] [INFO] Using worker: sync
+[2019-11-11 19:15:33 -0600] [27793] [INFO] Booting worker with pid: 27793
+[2019-11-11 19:15:33 -0600] [27794] [INFO] Booting worker with pid: 27794
+[2019-11-11 19:15:33 -0600] [27795] [INFO] Booting worker with pid: 27795
+[2019-11-11 19:15:33 -0600] [27796] [INFO] Booting worker with pid: 27796
+2019-11-11 19:15:35 js-16-101.jetstream-cloud.org root[27787] INFO Housekeeper spawned issues model updater process for repo 25430 with PID 27787
+2019-11-11 19:15:35 js-16-101.jetstream-cloud.org root[27792] INFO Housekeeper spawned insights model updater process for repo 1 with PID 27792
+2019-11-11 19:15:35 js-16-101.jetstream-cloud.org root[27790] INFO Housekeeper spawned pull_requests model updater process for repo 1 with PID 27790
+2019-11-11 19:15:35 js-16-101.jetstream-cloud.org root[27789] INFO Housekeeper spawned commits model updater process for repo 1 with PID 27789
+2019-11-11 19:15:35 js-16-101.jetstream-cloud.org root[27791] INFO Housekeeper spawned contributors model updater process for repo 1 with PID 27791
+2019-11-11 19:15:35 js-16-101.jetstream-cloud.org root[27788] INFO Housekeeper spawned repo_info model updater process for repo 1 with PID 27788
