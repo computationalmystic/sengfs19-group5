@@ -197,6 +197,22 @@ def annual_commit_count_ranked_by_repo_in_repo_group(self, repo_group_id, repo_i
     results = pd.read_sql(cdRgTpRankedCommitsSQL, self.database, params={ "repo_group_id": repo_group_id,
     "repo_id": repo_id})
     return results
+@annotate(tag='repo-timeline')
+def repo_timeline(self, repo_group_id, repo_id):
+    return {
+            "message": "This is sample output to be implemented fully in Sprint 3",
+            "repo_id": repo_id,
+            "repo_group_id": repo_group_id,
+            "timeline": [
+                {"date": '10-04-2019', "commits": 5},
+                {"date": '10-06-2019', "commits": 2},
+                {"date": '11-02-2019', "commits": 4}
+                ]
+            }
+
+@annotate(tag='repo-group-timeline')
+def repo_group_timeline(self, repo_group_id):
+    return [{"status": "New API endpoint is defined!"}]
 
 def create_commit_metrics(metrics):
     add_metrics(metrics, __name__)

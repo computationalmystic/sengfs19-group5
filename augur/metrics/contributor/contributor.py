@@ -557,6 +557,11 @@ def contributors_code_development(self, repo_group_id, repo_id=None, period='all
                                                                 'begin_date': begin_date, 'end_date': end_date})
     return results
 
+@annotate(tag='contributions')
+def contributions(self, contributor_id):
+    return {"status": "Hack the planet!"}
+
 def create_contributor_metrics(metrics):
     add_metrics(metrics, __name__)
+
 
