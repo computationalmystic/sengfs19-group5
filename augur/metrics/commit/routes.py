@@ -101,7 +101,7 @@ def create_commit_routes(server):
     server.addRepoMetric(metrics.annual_commit_count_ranked_by_repo_in_repo_group,'annual-commit-count-ranked-by-repo-in-repo-group')
 
     """
-    @api {get} /repo-groups/:repo_group_id/repo/:repo_id/timeline Timeline for Repo
+    @api {get} /repo-groups/:repo_group_id/repos/:repo_id/repo-timeline Timeline for Repo
     @apiName repo-timeline
     @apiGroup Experimental
     @apiDescription This is an Augur-specific metric. We are currently working to define these more formally. Source: Git Repository
