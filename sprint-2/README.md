@@ -4,11 +4,11 @@ Jacob Alongi, Matt Hudson, Tim Kuehner, Rebecca Parker (API)
 
 **Link to deployed project:** (API) -> http://129.114.16.101:5000/api/unstable/
 
-New API endpoints (partially implemented): http://129.114.16.101:5000/api/unstable/repo-groups/1/repos/1/repo-timeline (Endpoint 1)
+New API endpoints (partially implemented): http://129.114.16.101:5000/api/unstable/repo-groups/20/repos/25430/repo-timeline (Endpoint 1)
 
-http://129.114.16.101:5000/api/unstable/repo-groups/1/repo-group-timeline (Endpoint 2)
+http://129.114.16.101:5000/api/unstable/repo-groups/1/repo-group-timeline (Endpoint 2 partially implemented)
 
-http://129.114.16.101:5000/api/unstable/contributors/hudso1898/contributions (Endpoint 3)
+http://129.114.16.101:5000/api/unstable/contributors/hudso1898/contributions (Endpoint 3 partially implemented)
 
 ## What we are trying to accomplish
 
@@ -69,8 +69,8 @@ our contributor since we'll be implementing the endpoint for contributors, and t
 
 ## Endpoint Implementation
 
-We've defined basic python functions to serve the 3 endpoints we defined. Currently, they return JSON to demonstrate successful deployment. Endpoint (1) returns JSON in the format
-we specified for the repo timeline. We put these functions in [this file for commit](./augur/metrics/commit/commit.py) and [this file for contributor](./augur/metrics/contributor/contributor.py).
+We've defined basic python functions to serve the 3 endpoints we defined. Currently, they return JSON to demonstrate successful deployment. Endpoint (1), however, actually implements an SQL query, and returns JSON in the format
+we specified for the repo timeline and runs the SQL query we designed for the endpoint. We put these functions in [this file for commit](./augur/metrics/commit/commit.py) and [this file for contributor](./augur/metrics/contributor/contributor.py).
 
 ## Future for Sprint 3
 
