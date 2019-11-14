@@ -342,7 +342,7 @@ def create_contributor_routes(server):
     server.addRepoMetric(metrics.contributors_code_development, 'contributors-code-development')
 
     """
-    @api {get} /contributors/:contributor_id/contributions
+    @api {get} /contributors/:contributor_email/contributions
     @apiName contributions
     @apiGroup Experimental
     @apiDescription Returns a list of contributions from a specified user.
@@ -352,8 +352,8 @@ def create_contributor_routes(server):
                         
                     ]
     """
-    @server.app.route('/{}/contributors/<contributor_id>/contributions'.format(server.api_version))
-    def contributions(contributor_id):
-        response = server.transform(metrics.contributions, args=[contributor_id])
+    @server.app.route('/{}/contributors/<contributor_email>/contributions'.format(server.api_version))
+    def contributions(contributor_email):
+        response = server.transform(metrics.contributions, args=[contributor_email])
         return Response(response=response, status=200, mimetype="application/json")
 #    server.addRepoMetric(metrics.contributions, 'contributions')
