@@ -558,8 +558,18 @@ def contributors_code_development(self, repo_group_id, repo_id=None, period='all
     return results
 
 @annotate(tag='contributions')
-def contributions(self, contributor_id):
-    return {"status": "Hack the planet!"}
+def contributions(self, contributor_email):
+    contributionsSQL = s.sql.text("""
+    SELECT repo.repo_id, COUNT(commits) as contributions
+    FROM repo, commits
+    WHERE commits.repo_id = repo.repo_id
+    AND commits.cmt_committer_email = :contributor_email
+    GROUP BY repo.repo_id
+    ORDER BY repo.repo_id asc
+    """)
+
+    results = pd.read_sql(contributionsSQL, self.database, params={'contributor_email': contributor_email})
+    return results
 
 def create_contributor_metrics(metrics):
     add_metrics(metrics, __name__)
