@@ -51,3 +51,6 @@ def test_committer(metrics):
     assert metrics.committers(21,period='year').iloc[0]['count'] > 100
     assert metrics.committers(20,21000,period='year').iloc[0]['count'] > 100
 
+def test_contributions(metrics):
+    assert metrics.contributions("s@goggins.com").iloc[0]['count'] > 0
+
