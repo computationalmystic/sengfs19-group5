@@ -1,5 +1,5 @@
 import os
-import 'hudso/bin/pytest'
+import pytest
 import pandas as pd
 
 @pytest.fixture(scope="module")
