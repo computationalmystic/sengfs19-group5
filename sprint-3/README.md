@@ -27,3 +27,4 @@ For endpoint 3, we did a single query given the email of the contributor instead
 is also a unique identifier but is more readable and knowable than the contributor id. We return a list of repos the contributor has commits in, and the number of contributions in that repository. 
 
 ## Tests
+We modeled them after the existing design in order to stay consistent with the current tests. First, we created functional tests to ensure that the function will actually execute. We first mocked the metrics model and then called the new functions to test that some values were returned. In addition, we tested the routes on the live development server to ensure that the function executes on the live server as well, returning non-empty data. 
