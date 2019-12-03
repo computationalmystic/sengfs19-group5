@@ -6,6 +6,47 @@ Jacob Alongi, Matt Hudson, Tim Kuehner, Rebecca Parker
 
 **Sprint 2** [here](./sprint-2)
 
+**Sprint 3** [here](./sprint-3)
+
+# Sprint 4 README
+
+## Deployment Instructions
+
+## Files/Code Modified
+
+## Completeness
+
+Our project relies on the augur database running on the same server that runs Augur's backend server. It does not rely on endpoints outside the normal Augur environment. You could point Augur to augur's database if you want; it *should* work, because we did not edit anything regarding that configuration - we just added endpoints that access the database in the same
+way every other endpoint accesses the database.
+
+## Testing
+
+## Release
+
+## Science Fair (in-class demopalooza)
+
+For our demonstration, we demonstrated our endpoints running with various repos and repo groups. We used the augur repository and repogroup to demonstrate endpoints 1 and 2, and we used Dr. Goggins (s@goggins.com) as our example for Endpoint 3. We also demonstrated the incredible power of the `sl` bash command. a.k.a if you mistype the `ls` command. It's less of a trainwreck than my finals next week.
+
+## Feedback Incorporation
+
+We found the endpoints to be satisfactory as they were presented in Sprints 2 and 3, as do you:
+
+> Good progress for sprint 2!
+
+> Sean Goggins, Nov 30 at 6:45am
+
+> Really great progress on the endpoints!
+
+> Sean Goggins, Dec 1 at 2:15pm
+
+:)
+
+But seriously, we didn't find any feedback issues, so we focused on the demo and this README.
+
+-------------------------------------
+Base Augur Readme Below
+
+-------------------------------------
 # Augur
 
 branch | status
