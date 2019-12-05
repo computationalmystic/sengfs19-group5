@@ -11,7 +11,7 @@ Jacob Alongi, Matt Hudson, Tim Kuehner, Rebecca Parker
 # Sprint 4 README
 
 ## Deployment Instructions
-
+It is deplyoed, just go to the url of our endpoint and the data is available.
 
 ## Files/Code Modified
 We created the following files:<br>
