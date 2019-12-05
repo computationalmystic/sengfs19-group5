@@ -12,7 +12,18 @@ Jacob Alongi, Matt Hudson, Tim Kuehner, Rebecca Parker
 
 ## Deployment Instructions
 
+
 ## Files/Code Modified
+We created the following files:<br>
+(created) contributors.py<br>
+contributors.py contains the queries to create the API endpoints<br>
+(modified) routes.py<br>
+routes.py was updated to include contributors.py<br>
+(created) test_contributor_functions.py<br>
+test created to make sure the queries returned the correct values<br>
+(created) test_contributor_routes.py<br>
+test created to make sure the routes correctly returned data<br>
+
 
 ## Completeness
 
